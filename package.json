@@ -1,11 +1,13 @@
 {
-  "name": "vanilla-app-template",
+  "name": "project-group-14",
+  "author": "group-14",
+  "license": "none",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "build": "vite build --base=/project-group-14/",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -14,8 +16,6 @@
     "postcss-sort-media-queries": "^5.2.0",
     "vite": "^5.4.6"
   },
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
-  "license": "ISC",
   "dependencies": {
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
