@@ -63,6 +63,12 @@
   .advertisement-description {
     font-size: 76px;
     --pseudo-heigth: calc(1em + 2 * 4px);
+    padding-left: 16px;
+    padding-right: 10px;
+  }
+
+  .advertisement-discount {
+    margin-top: 0;
   }
 
   .advertisement-discount::before {
