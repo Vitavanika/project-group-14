@@ -21,6 +21,9 @@
 }
 
 .veggies-section-descr {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.43;
     color: #fbfbfb;
     margin-bottom: 40px;
 }
@@ -31,27 +34,25 @@
     background-color: #fbfbfb;
     border-radius: 40px;
     padding: 32px 24px;
-    width: 335px;
-    height: 376px;
+    max-width: 335px;
 }
 .veggies-item:not(:last-child) {
     margin-bottom: 20px;
 }
 
 .veggies-item-title {
-    color: #7a3145;
-    
-    /* 
     font-weight: 600;
     font-size: 28px;
     line-height: 1;
     letter-spacing: -0.01em;
-    text-transform: uppercase; 
-    */
-    
+    text-transform: uppercase;
+    color: #7a3145;
 }
 
 .veggies-item-price {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.43;
     color: #141414;
 }
 
