@@ -1,0 +1,117 @@
+/* #region Made  */
+
+.made-section {
+}
+.container {
+  padding: 0;
+}
+.image-wrapper {
+  padding: 40px 20px;
+  background-color: #7a3145;
+  max-width: 375px;
+  display: block;
+  margin: 0;
+}
+.made-image {
+  border-radius: 30px;
+}
+.section {
+  padding: 40px 0;
+  margin: 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+ol {
+  counter-reset: ol-numbers;
+}
+ol li {
+  position: relative;
+  padding: 0;
+}
+ol li::before {
+  counter-increment: ol-numbers;
+  content: counter(ol-numbers);
+  position: absolute;
+
+  left: 24px;
+  width: 42px;
+  height: 42px;
+  text-align: center;
+  justify-content: center;
+  background-color: #7a3145;
+  color: #fbfbfb;
+  border-radius: 50%;
+  border: 5px solid #d4bfc4;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  --pseudo-heigth: 100%;
+  top: calc((var(--container-heigth) / 2) - 50%);
+}
+.list-wrapper {
+  background-color: #576f35;
+  padding: 80px 20px;
+  width: 100%;
+}
+.subtitle {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  max-width: 335px;
+  margin-bottom: 20px;
+  color: #fbfbfb;
+}
+.subtitle-accent {
+  color: #d4bfc4;
+}
+.made-section-paragraf {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  margin-bottom: 40px;
+  width: 335px;
+}
+.made-section-list {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  max-width: 335px;
+  padding: 0;
+}
+.made-section-item {
+  background-color: #fbfbfb;
+  border-radius: 15px;
+  padding: 12px 27px 12px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-paragraf {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #858585;
+  padding-left: 76px;
+}
+.item-accent {
+  font-weight: 700;
+  color: #141414;
+}
+/* #endregion */
