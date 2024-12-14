@@ -1,48 +1,44 @@
 /* #region Made  */
 
 .made-section {
+  padding: 40px 0;
+  margin: 0;
 }
-/* .container {
+.container {
   padding: 0;
-} */
+}
 .image-wrapper {
   padding: 40px 20px;
   background-color: #7a3145;
-  max-width: 375px;
+  min-width: 320px;
   display: block;
   margin: 0;
+}
+@media only screen and (min-width: 768px) {
+  .image-wrapper {
+    max-width: 1279px;
+    padding: 100px 64px;
+  }
+  .made-image {
+    width: 640px;
+    height: 640px;
+  }
 }
 .made-image {
   border-radius: 30px;
 }
-.section {
-  padding: 40px 0;
-  margin: 0;
-}
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-ol {
+
+.made-section-list {
   counter-reset: ol-numbers;
 }
-ol li {
+.made-section-item {
   position: relative;
   padding: 0;
 }
-ol li::before {
+.made-section-item::before {
   counter-increment: ol-numbers;
   content: counter(ol-numbers);
   position: absolute;
-
   left: 24px;
   width: 42px;
   height: 42px;
@@ -52,7 +48,6 @@ ol li::before {
   color: #fbfbfb;
   border-radius: 50%;
   border: 5px solid #d4bfc4;
-
   font-weight: 600;
   font-size: 18px;
   line-height: 1.11;
@@ -68,6 +63,11 @@ ol li::before {
   padding: 80px 20px;
   width: 100%;
 }
+@media only screen and (min-width: 768px) {
+  .list-wrapper {
+    padding: 100px 164px;
+  }
+}
 .subtitle {
   font-weight: 600;
   font-size: 28px;
@@ -81,12 +81,27 @@ ol li::before {
 .subtitle-accent {
   color: #d4bfc4;
 }
+@media only screen and (min-width: 768px) {
+  .subtitle {
+    font-size: 32px;
+    margin-bottom: 24px;
+    max-width: 600px;
+  }
+}
 .made-section-paragraf {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.43;
   margin-bottom: 40px;
-  width: 335px;
+  max-width: 335px;
+  color: #fbfbfb;
+}
+@media only screen and (min-width: 768px) {
+  .made-section-paragraf {
+    font-size: 16px;
+    line-height: 1.25;
+    max-width: 600px;
+  }
 }
 .made-section-list {
   display: flex;
@@ -94,6 +109,12 @@ ol li::before {
   flex-direction: column;
   max-width: 335px;
   padding: 0;
+}
+@media only screen and (min-width: 768px) {
+  .made-section-list {
+    max-width: 440px;
+    gap: 24px;
+  }
 }
 .made-section-item {
   background-color: #fbfbfb;
@@ -103,12 +124,24 @@ ol li::before {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (min-width: 768px) {
+  .made-section-item {
+    padding: 0;
+  }
+}
 .item-paragraf {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.43;
   color: #858585;
   padding-left: 76px;
+}
+@media only screen and (min-width: 768px) {
+  .item-paragraf {
+    font-size: 16px;
+    line-height: 1.25;
+    padding: 18px 15px 18px 86px;
+  }
 }
 .item-accent {
   font-weight: 700;
