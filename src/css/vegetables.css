@@ -34,7 +34,6 @@
     background-color: #fbfbfb;
     border-radius: 40px;
     padding: 32px 24px;
-    max-width: 335px;
 }
 .veggies-item:not(:last-child) {
     margin-bottom: 20px;
