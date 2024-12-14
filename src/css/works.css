@@ -4,6 +4,11 @@
   padding: 40px 0;
   margin: 0;
 }
+@media only screen and (min-width: 1280px) {
+  .made-wrapper {
+    display: flex;
+  }
+}
 
 .image-wrapper {
   padding: 40px 20px;
@@ -17,11 +22,34 @@
     max-width: 1279px;
     padding: 100px 64px;
   }
-  .made-image {
-    width: 640px;
-    height: 640px;
+}
+@media only screen and (min-width: 1280px) {
+  .image-wrapper {
+    padding: 100px 100px;
+    min-width: 640px;
+  }
+  .block {
+    flex: 1;
   }
 }
+.list-wrapper {
+  background-color: #576f35;
+  padding: 80px 20px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .list-wrapper {
+    padding: 100px 164px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .list-wrapper {
+    padding: 100px 100px;
+    min-width: 640px;
+  }
+}
+
 .made-image {
   border-radius: 30px;
 }
@@ -56,16 +84,6 @@
   --pseudo-heigth: 100%;
   top: calc((var(--container-heigth) / 2) - 50%);
 }
-.list-wrapper {
-  background-color: #576f35;
-  padding: 80px 20px;
-  width: 100%;
-}
-@media only screen and (min-width: 768px) {
-  .list-wrapper {
-    padding: 100px 164px;
-  }
-}
 .subtitle {
   font-weight: 600;
   font-size: 28px;
@@ -83,7 +101,7 @@
   .subtitle {
     font-size: 32px;
     margin-bottom: 24px;
-    max-width: 600px;
+    max-width: 440px;
   }
 }
 .made-section-paragraf {
@@ -98,7 +116,7 @@
   .made-section-paragraf {
     font-size: 16px;
     line-height: 1.25;
-    max-width: 600px;
+    max-width: 440px;
   }
 }
 .made-section-list {
@@ -117,14 +135,14 @@
 .made-section-item {
   background-color: #fbfbfb;
   border-radius: 15px;
-  padding: 12px 27px 12px 24px;
+  /* padding: 12px 27px 12px 24px; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media only screen and (min-width: 768px) {
   .made-section-item {
-    padding: 0;
+    /* padding: 12px 25px 12px 24px; */
   }
 }
 .item-paragraf {
@@ -132,13 +150,13 @@
   font-size: 14px;
   line-height: 1.43;
   color: #858585;
-  padding-left: 76px;
+  padding: 12px 27px 12px 76px;
 }
 @media only screen and (min-width: 768px) {
   .item-paragraf {
     font-size: 16px;
     line-height: 1.25;
-    padding: 18px 15px 18px 86px;
+    padding: 18px 15px 18px 76px;
   }
 }
 .item-accent {
