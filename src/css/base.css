@@ -1,11 +1,11 @@
 :root {
-  font-family: "Inter Tight", serif;
+  font-family: "Inter Tight", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
 
   color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  background-color: #fbfbfb;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -24,8 +24,4 @@ body {
 
 main {
   flex-grow: 1;
-}
-
-main:has(.back-link) {
-  text-align: center;
 }
