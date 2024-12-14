@@ -14,12 +14,10 @@
     text-transform: uppercase;
     color: #141414;
     width: 100%;
-    z-index: 2;
     --pseudo-heigth: calc(1em * 1.08 * 2);
   }
 
   .advertisement-discount {
-    display: inline-block;
     position: relative;
     color: #fbfbfb;
     z-index: 1;
