@@ -1,8 +1,9 @@
 /* #region Made  */
 
 .made-section {
+  padding: 40px 0;
+  margin: 0;
 }
-
 .image-wrapper {
   padding: 40px 20px;
   background-color: #7a3145;
@@ -13,11 +14,6 @@
 .made-image {
   border-radius: 30px;
 }
-.section {
-  padding: 40px 0;
-  margin: 0;
-}
-
 ol {
   counter-reset: ol-numbers;
 }
@@ -74,7 +70,6 @@ ol li::before {
   line-height: 1.43;
   margin-bottom: 40px;
   width: 335px;
-  color: #fbfbfb;
 }
 .made-section-list {
   display: flex;
