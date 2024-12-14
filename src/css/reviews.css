@@ -1,0 +1,134 @@
+/* секція Reviews */
+/* #region для мобільного */
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 80px 20px;
+}
+.reviews-title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 335px;
+}
+.reviews-title h2 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #141414;
+}
+.reviews-title span {
+  color: #576f35;
+}
+.reviews-title p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #141414;
+}
+.reviews-cards {
+}
+.reviews-list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.reviews-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  border: 1px solid #d4bfc4;
+  border-radius: 24px;
+  padding: 20px 16px;
+}
+
+.reviews-cards-text {
+  display: flex;
+  text-align: center;
+  gap: 8px;
+  flex-direction: column;
+}
+.reviews-cards-text h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #141414;
+}
+.reviews-cards-text p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  color: #858585;
+}
+
+/* код вимкнення 2 та 3 елемента */
+.reviews-items:nth-of-type(2),
+.reviews-items:nth-of-type(3) {
+  display: none;
+}
+
+/* #endregion */
+/* #region для планшета */
+@media only screen and (min-width: 768px) {
+  .reviews {
+    gap: 52px;
+    padding: 100px 32px;
+  }
+  .reviews-title {
+    gap: 24px;
+    max-width: 553px;
+  }
+  .reviews-title h2 {
+    font-size: 64px;
+    line-height: 1;
+  }
+  .reviews-title p {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .reviews-items {
+    width: calc((100% - 24px) / 2);
+    padding: 20px;
+  }
+  .reviews-cards-text p {
+    font-size: 16px;
+    line-height: 1.25;
+    
+  }
+  
+  /* код вимкнення тільки 3 елемента */
+  .reviews-items:nth-of-type(3) {
+    display: none;
+  }
+  .reviews-items:nth-of-type(2) {
+    display: inherit;
+  }
+}
+/* #endregion */
+/* #region для десктопа */
+@media only screen and (min-width: 1280px) {
+  .reviews {
+    padding: 100px;
+  }
+  
+  .reviews-items {
+    width: calc((100% - 48px) / 3);
+    
+  }
+    
+  /* код повертає елементам видимість */
+  .reviews-items:nth-of-type(2),
+  .reviews-items:nth-of-type(3) {
+    display: inherit;
+  }
+}
+/* #endregion */
+/* кінець секції reviews */
