@@ -1,6 +1,8 @@
 /* #region Made  */
 
 .made-section {
+  padding: 40px 0;
+  margin: 0;
 }
 
 .image-wrapper {
@@ -13,19 +15,15 @@
 .made-image {
   border-radius: 30px;
 }
-.section {
-  padding: 40px 0;
-  margin: 0;
-}
 
-ol {
+.made-section-list {
   counter-reset: ol-numbers;
 }
-ol li {
+.made-section-item {
   position: relative;
   padding: 0;
 }
-ol li::before {
+.made-section-item::before {
   counter-increment: ol-numbers;
   content: counter(ol-numbers);
   position: absolute;
