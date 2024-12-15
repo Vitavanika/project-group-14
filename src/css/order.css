@@ -49,6 +49,7 @@
     background-color: #7a3145;
   }
 
+<<<<<<< HEAD
   .thumb {
     overflow: hidden;
     width: 295px;
@@ -56,6 +57,11 @@
     border-radius: 15px;
     margin-bottom: 20px;
     background: rgba(20, 20, 20, 0.2);
+=======
+  .order-picture {
+    display: inline-block;
+    margin-bottom: 20px;
+>>>>>>> 73a84e258487e5aaecceb3d6333a13d43f63241c
   }
 
   .social-caption {
@@ -72,6 +78,18 @@
     flex-wrap: wrap;
   }
 
+<<<<<<< HEAD
+=======
+  .order-social-list-item {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+  }
+
+>>>>>>> 73a84e258487e5aaecceb3d6333a13d43f63241c
   .social-link {
     font-weight: 600;
     font-size: 18px;
@@ -87,12 +105,16 @@
     padding: 100px 0;
   }
 
+<<<<<<< HEAD
   .order-container.container {
     padding: 0;
   }
 
   .order-title-contaier {
     padding: 0 96px 0 32px;
+=======
+  .order-title-contaier {
+>>>>>>> 73a84e258487e5aaecceb3d6333a13d43f63241c
     margin-bottom: 52px;
   }
 
@@ -108,7 +130,10 @@
   }
 
   .form-and-social-container {
+<<<<<<< HEAD
     padding: 0 64px;
+=======
+>>>>>>> 73a84e258487e5aaecceb3d6333a13d43f63241c
     gap: 32px;
   }
 
@@ -118,6 +143,7 @@
   }
 
   .order-social {
+<<<<<<< HEAD
     padding: 52px;
   }
 
@@ -130,10 +156,32 @@
   .social-caption {
     font-size: 16px;
     line-height: 1.25;
+=======
+    border-radius: 30px;
+    padding: 40px 20px;
+    width: 100%;
+
+    background-color: #7a3145;
+    padding: 40px 20px;
+  }
+
+  .order-picture {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  .social-caption {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 143%;
+    color: #d4bfc4;
+    margin-bottom: 16px;
+>>>>>>> 73a84e258487e5aaecceb3d6333a13d43f63241c
   }
 
   .order-social-list {
     display: flex;
+<<<<<<< HEAD
     gap: 12px;
     flex-wrap: wrap;
   }
@@ -171,5 +219,27 @@
     height: 352px;
     margin-bottom: 52px;
     margin-bottom: 80px;
+=======
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .order-social-list-item {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 111%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+  }
+
+  .social-link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 111%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+>>>>>>> 73a84e258487e5aaecceb3d6333a13d43f63241c
   }
 }
