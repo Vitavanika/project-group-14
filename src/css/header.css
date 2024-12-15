@@ -1,7 +1,9 @@
+.header{
+  background-color: #576f35;
+}
 .header-nav {
   display: flex;
   justify-content: space-between;
-  background-color: #576f35;
   align-items: center;
   padding-top: 20px;
 }
@@ -18,9 +20,12 @@
     transform: translateX(-50%);
     width: 100%;
   }
+  .header{
+    background-color: transparent;
+  }
   .header-nav {
-    max-width: 1280px;
-     background-color: transparent;
+      max-width: 1280px;
+   
   }
 }
 
