@@ -34,7 +34,9 @@ rgba(20, 20, 20, 0.2)),
 url(/img/mobile/hero-mobile.jpeg);
 max-width: 375px;
 height: 372px;
+display: block;
 background-repeat: no-repeat;
+background-size: cover ;
 }
 @media only screen and (min-width: 768px){
 .hero-green{
@@ -88,7 +90,7 @@ min-width: 502px;
         background-image: linear-gradient(rgba(20, 20, 20, 0.2), 
 rgba(20, 20, 20, 0.2)), 
 url(/img/desktop/hero-desktop.jpg);
-width: 640px;
+max-width: 640px;
 height: 796px;
     }
 }
