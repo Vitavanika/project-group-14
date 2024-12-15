@@ -18,6 +18,7 @@
   }
 
   .advertisement-discount {
+    display: inline-block;
     position: relative;
     color: #fbfbfb;
     z-index: 1;
