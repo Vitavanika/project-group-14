@@ -118,7 +118,6 @@
 
   .order-form {
     height: 632px;
-    background-color: #fff;
   }
 
   .order-social {
@@ -126,9 +125,15 @@
   }
 
   .thumb {
-    max-width: 536px;
-    height: auto;
+    max-width: 100%;
+    width: 536px;
+    height: 316px;
     margin-bottom: 52px;
+  }
+
+  .order-picture img {
+    width: 536px;
+    height: 316px;
   }
 
   .social-caption {
@@ -137,15 +142,12 @@
   }
 
   .order-social-list {
-    display: flex;
     gap: 12px;
-    flex-wrap: wrap;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .order-title-contaier {
-    margin-bottom: 52px;
     padding: 0 100px;
     max-width: 751px;
     box-sizing: content-box;
@@ -155,25 +157,26 @@
     flex-direction: row;
     padding: 0 100px;
     margin: 0 auto;
-    gap: 32px;
   }
 
   .order-form {
     height: 592px;
-    background-color: #fff;
     width: calc((100% - 32px) / 2);
   }
 
   .order-social {
     padding: 52px 48px;
     width: calc((100% - 32px) / 2);
-    background-color: #7a3145;
   }
 
   .thumb {
-    max-width: 428px;
-    height: auto;
-    margin-bottom: 52px;
+    width: 428px;
+    height: 352px;
     margin-bottom: 80px;
+  }
+
+  .order-picture img {
+    width: 428px;
+    height: 352px;
   }
 }
