@@ -49,9 +49,13 @@
     background-color: #7a3145;
   }
 
-  .order-picture {
-    display: inline-block;
+  .thumb {
+    overflow: hidden;
+    width: 295px;
+    height: 272px;
+    border-radius: 15px;
     margin-bottom: 20px;
+    background: rgba(20, 20, 20, 0.2);
   }
 
   .social-caption {
@@ -66,15 +70,6 @@
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
-  }
-
-  .order-social-list-item {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.11;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    color: #fbfbfb;
   }
 
   .social-link {
@@ -126,8 +121,9 @@
     padding: 52px;
   }
 
-  .order-picture {
-    display: inline-block;
+  .thumb {
+    width: 536px;
+    height: 316px;
     margin-bottom: 52px;
   }
 
@@ -144,56 +140,36 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .order-section {
-    padding: 100px 0;
-  }
-
   .order-title-contaier {
     margin-bottom: 52px;
-  }
-
-  .order-title {
-    font-size: 64px;
-    line-height: 1;
-    margin-bottom: 24px;
-  }
-
-  .order-description {
-    font-size: 16px;
-    line-height: 1.25;
+    padding: 0 100px;
+    max-width: 751px;
+    box-sizing: content-box;
   }
 
   .form-and-social-container {
+    flex-direction: row;
+    padding: 0 100px;
+    margin: 0 auto;
     gap: 32px;
   }
 
   .order-form {
-    height: 552px;
+    height: 592px;
     background-color: #fff;
+    width: calc((100% - 32px) / 2);
   }
 
   .order-social {
-    border-radius: 30px;
-    padding: 50px;
-    width: 100%;
-
+    padding: 52px 48px;
+    width: calc((100% - 32px) / 2);
     background-color: #7a3145;
-    padding: 40px 20px;
   }
 
-  .order-picture {
-    display: inline-block;
-    margin-bottom: 20px;
-  }
-
-  .social-caption {
-    font-size: 16px;
-    line-height: 1.25;
-  }
-
-  .order-social-list {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
+  .thumb {
+    width: 428px;
+    height: 352px;
+    margin-bottom: 52px;
+    margin-bottom: 80px;
   }
 }
