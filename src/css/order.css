@@ -37,10 +37,84 @@
   }
 
   .order-form {
-    height: 552px;
-    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 20px;
     border-radius: 30px;
+    background: #fbfbfb;
   }
+
+  .order-form-text {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #141414;
+  }
+
+  .braun-text {
+    color: #7a3145;
+  }
+
+  .green-text {
+    color: #576f35;
+  }
+
+  .order-form-lists {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .order-form-input {
+    display: flex;
+    border: 1px solid #858585;
+    border-radius: 30px;
+    padding-left: 16px;
+    width: 100%;
+    height: 48px;
+  }
+
+  .order-form-input::placeholder,
+  .order-form-textarea::placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.43;
+    text-align: start;
+    justify-content: center;
+    color: #141414;
+  }
+
+  .order-form-textarea {
+    display: flex;
+    border: 1px solid #858585;
+    border-radius: 15px;
+    padding: 16px;
+    width: 100%;
+    height: 92px;
+  }
+
+  .order-form-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    width: 100%;
+    height: 52px;
+    background: #7a3145;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+  }
+
+
 
   .order-social {
     border-radius: 30px;
@@ -117,8 +191,25 @@
   }
 
   .order-form {
-    height: 632px;
-    background-color: #fff;
+    gap: 52px;
+    padding: 72px 100px;
+    width: 100%;
+  }
+
+  .order-form-text {
+    font-size: 32px;
+  }
+
+  .order-form-lists {
+    margin-bottom: 24px;
+  }
+
+  .order-form-input {
+    height: 52px;
+  }
+
+  .order-form-textarea {
+    height: 96px;
   }
 
   .order-social {
@@ -162,6 +253,8 @@
     height: 592px;
     background-color: #fff;
     width: calc((100% - 32px) / 2);
+    padding: 52px 48px;
+
   }
 
   .order-social {
