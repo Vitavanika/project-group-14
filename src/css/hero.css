@@ -1,4 +1,6 @@
 .hero{
+}
+.hero-cont{
     background-color:  #576f35;
 }
 .hero-green {
@@ -17,25 +19,22 @@ letter-spacing: -0.01em;
 text-transform: uppercase;
 color: #fbfbfb;
 max-width: 335px;
+margin-top: 48px;
 }
 .hero-text {
 font-weight: 500;
 font-size: 14px;
 line-height: 1.43;
 color: #fbfbfb;
-width: 335px;
 max-width: 335px;
 }
 .hero-img {
 background-image: linear-gradient(rgba(20, 20, 20, 0.2), 
 rgba(20, 20, 20, 0.2)), 
-url(/img/mobile/hero-mobile.png);
-width: 375px;
+url(/img/mobile/hero-mobile.jpeg);
+max-width: 375px;
 height: 372px;
 background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-margin: 0 auto ;
 }
 @media only screen and (min-width: 768px){
 .hero-green{
@@ -45,6 +44,7 @@ margin: 0 auto ;
     .hero-title{
 font-size: 76px;
 min-width: 704px;
+margin-top: 48px;
     }
     .hero-text{
 font-size: 16px;
@@ -54,9 +54,10 @@ min-width: 603px;
     .hero-img{
         background-image: linear-gradient(rgba(20, 20, 20, 0.2), 
 rgba(20, 20, 20, 0.2)), 
-url(/img/tablet/hero-tablet@2x.png);
-width: 768px;
+url(/img/tablet/hero-tablet@2x.jpg);
+max-width: 768px;
 height: 536px;
+padding: 0;
     }
 }
 @media only screen and (min-width: 1280px) {
@@ -86,7 +87,7 @@ min-width: 502px;
     .hero-img{
         background-image: linear-gradient(rgba(20, 20, 20, 0.2), 
 rgba(20, 20, 20, 0.2)), 
-url(/img/desktop/hero-desktop.png);
+url(/img/desktop/hero-desktop.jpg);
 width: 640px;
 height: 796px;
     }

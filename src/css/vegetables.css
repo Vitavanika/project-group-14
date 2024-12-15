@@ -1,0 +1,59 @@
+.veggies-section {
+    background-color: #7a3145;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.veggies-container {}
+
+.veggies-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+    margin-bottom: 20px;
+}
+
+.veggies-accent {
+    color: #d4bfc4;
+}
+
+.veggies-section-descr {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #fbfbfb;
+    margin-bottom: 40px;
+}
+
+.veggies-list {}
+
+.veggies-item {
+    background-color: #fbfbfb;
+    border-radius: 40px;
+    padding: 32px 24px;
+}
+.veggies-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.veggies-item-title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #7a3145;
+    margin-bottom: 12px;
+}
+
+.veggies-item-price {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #141414;
+}
+
+.veggies-item-pic {}
