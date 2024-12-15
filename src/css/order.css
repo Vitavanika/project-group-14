@@ -49,9 +49,13 @@
     background-color: #7a3145;
   }
 
-  .order-picture {
-    display: inline-block;
+  .thumb {
+    overflow: hidden;
+    max-width: 295px;
+    height: auto;
+    border-radius: 15px;
     margin-bottom: 20px;
+    background: rgba(20, 20, 20, 0.2);
   }
 
   .social-caption {
@@ -69,12 +73,7 @@
   }
 
   .order-social-list-item {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.11;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    color: #fbfbfb;
+    height: 20px;
   }
 
   .social-link {
@@ -92,7 +91,12 @@
     padding: 100px 0;
   }
 
+  .order-container.container {
+    padding: 0;
+  }
+
   .order-title-contaier {
+    padding: 0 96px 0 32px;
     margin-bottom: 52px;
   }
 
@@ -108,57 +112,68 @@
   }
 
   .form-and-social-container {
+    padding: 0 64px;
     gap: 32px;
   }
 
   .order-form {
-    height: 552px;
+    height: 632px;
     background-color: #fff;
   }
 
   .order-social {
-    border-radius: 30px;
-    padding: 40px 20px;
-    width: 100%;
-
-    background-color: #7a3145;
-    padding: 40px 20px;
+    padding: 52px;
   }
 
-  .order-picture {
-    display: inline-block;
-    margin-bottom: 20px;
+  .thumb {
+    max-width: 536px;
+    height: auto;
+    margin-bottom: 52px;
   }
 
   .social-caption {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 143%;
-    color: #d4bfc4;
-    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.25;
   }
 
   .order-social-list {
     display: flex;
-    gap: 8px;
+    gap: 12px;
     flex-wrap: wrap;
   }
+}
 
-  .order-social-list-item {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 111%;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    color: #fbfbfb;
+@media only screen and (min-width: 1280px) {
+  .order-title-contaier {
+    margin-bottom: 52px;
+    padding: 0 100px;
+    max-width: 751px;
+    box-sizing: content-box;
   }
 
-  .social-link {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 111%;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    color: #fbfbfb;
+  .form-and-social-container {
+    flex-direction: row;
+    padding: 0 100px;
+    margin: 0 auto;
+    gap: 32px;
+  }
+
+  .order-form {
+    height: 592px;
+    background-color: #fff;
+    width: calc((100% - 32px) / 2);
+  }
+
+  .order-social {
+    padding: 52px 48px;
+    width: calc((100% - 32px) / 2);
+    background-color: #7a3145;
+  }
+
+  .thumb {
+    max-width: 428px;
+    height: auto;
+    margin-bottom: 52px;
+    margin-bottom: 80px;
   }
 }
