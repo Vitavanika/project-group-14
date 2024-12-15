@@ -1,12 +1,14 @@
 /* #region Made  */
 
 .made-section {
-  padding: 40px 0;
+  padding: 0;
   margin: 0;
 }
 @media only screen and (min-width: 1280px) {
   .made-wrapper {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -117,6 +119,12 @@
     font-size: 16px;
     line-height: 1.25;
     max-width: 440px;
+    margin-bottom: 52px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .made-section-paragraf {
+    margin-bottom: 104px;
   }
 }
 .made-section-list {
@@ -135,14 +143,11 @@
 .made-section-item {
   background-color: #fbfbfb;
   border-radius: 15px;
-  /* padding: 12px 27px 12px 24px; */
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 @media only screen and (min-width: 768px) {
   .made-section-item {
-    /* padding: 12px 25px 12px 24px; */
   }
 }
 .item-paragraf {
@@ -156,7 +161,10 @@
   .item-paragraf {
     font-size: 16px;
     line-height: 1.25;
-    padding: 18px 15px 18px 76px;
+    padding: 18px 17px 18px 76px;
+  }
+  .made-section-item:nth-child(2) .item-paragraf {
+    padding: 28px 17px 28px 76px;
   }
 }
 .item-accent {
