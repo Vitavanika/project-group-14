@@ -51,8 +51,8 @@
 
   .thumb {
     overflow: hidden;
-    width: 295px;
-    height: 272px;
+    max-width: 295px;
+    height: auto;
     border-radius: 15px;
     margin-bottom: 20px;
     background: rgba(20, 20, 20, 0.2);
@@ -126,8 +126,8 @@
   }
 
   .thumb {
-    width: 536px;
-    height: 316px;
+    max-width: 536px;
+    height: auto;
     margin-bottom: 52px;
   }
 
@@ -171,8 +171,8 @@
   }
 
   .thumb {
-    width: 428px;
-    height: 352px;
+    max-width: 428px;
+    height: auto;
     margin-bottom: 52px;
     margin-bottom: 80px;
   }
