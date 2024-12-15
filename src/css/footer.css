@@ -1,11 +1,12 @@
 .footer {
-  padding: 32px 20px;
+  padding: 40px 0;
   background-color: #7a3145;
 }
 .footer-wrapper {
   display: flex;
   flex-direction: column;
 }
+
 .footer-main {
   margin-bottom: 40px;
 }
@@ -24,7 +25,7 @@
 }
 @media only screen and (min-width: 768px) {
   .footer {
-    padding: 32px;
+    padding: 32px 0;
   }
   .footer-desc {
     font-size: 16px;
@@ -39,7 +40,7 @@
 }
 @media only screen and (min-width: 1280px) {
   .footer {
-    padding: 52px 100px;
+    padding: 52px 0;
   }
 }
 
@@ -102,7 +103,6 @@
   }
 }
 .policy-wrapper {
-  margin: 0;
   display: flex;
   flex-direction: column;
   gap: 14px;
