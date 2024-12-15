@@ -34,7 +34,6 @@ rgba(20, 20, 20, 0.2)),
 url(/img/mobile/hero-mobile.jpeg);
 max-width: 375px;
 height: 372px;
-display: block;
 background-repeat: no-repeat;
 background-size: cover ;
 }
