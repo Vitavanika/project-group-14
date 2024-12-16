@@ -12,7 +12,49 @@
       </p>
     </div>
     <div class="form-and-social-container">
-      <form class="order-form">Тут буде форма</form>
+      <div class="order-form">
+        <p class="order-form-text">
+          Ordering <span class="braun-text">from us</span> is quick and easy!
+          Fill out <span class="green-text">the form</span> below and we will
+          contact you !
+        </p>
+        <div class="oder-form-send">
+          <ul class="order-form-lists">
+            <li class="order-form-item">
+              <input
+                class="order-form-input"
+                type="name"
+                name="user-name"
+                id="user-name"
+                placeholder="Full Name"
+                required
+              />
+            </li>
+            <li class="order-form-item">
+              <input
+                class="order-form-input valid-email"
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder="Email"
+                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                required
+              />
+              <p class="text-valid">Succes!</p>
+              <p class="text-invalid">Invalid email, try again</p>
+            </li>
+            <li class="order-form-item">
+              <textarea
+                class="order-form-textarea"
+                name="user-comment"
+                id="user-comment"
+                placeholder="Comment"
+              ></textarea>
+            </li>
+          </ul>
+          <button class="order-form-btn" type="submit">SEND</button>
+        </div>
+      </div>
       <div class="order-social">
         <div class="thumb">
           <picture class="order-picture">
