@@ -55,3 +55,13 @@ img {
   clip-path: inset(100%);
   overflow: hidden;
 }
+
+input,
+textarea,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
