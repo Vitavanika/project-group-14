@@ -12,37 +12,81 @@
       </p>
     </div>
     <div class="form-and-social-container">
-      <div class="order-form">Тут буде форма</div>
+      <div class="order-form">
+        <p class="order-form-text">
+          Ordering <span class="braun-text">from us</span> is quick and easy!
+          Fill out <span class="green-text">the form</span> below and we will
+          contact you !
+        </p>
+        <form class="oder-form-send">
+          <ul class="order-form-lists">
+            <li class="order-form-item">
+              <input
+                class="order-form-input"
+                type="name"
+                name="user-name"
+                id="user-name"
+                placeholder="Full Name"
+                required
+              />
+            </li>
+            <li class="order-form-item">
+              <input
+                class="order-form-input valid-email"
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder="Email"
+                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                required
+              />
+              <p class="text-valid">Succes!</p>
+              <p class="text-invalid">Invalid email, try again</p>
+            </li>
+            <li class="order-form-item">
+              <textarea
+                class="order-form-textarea"
+                name="user-comment"
+                id="user-comment"
+                placeholder="Comment"
+              ></textarea>
+            </li>
+          </ul>
+          <button class="order-form-btn" type="submit">SEND</button>
+        </form>
+      </div>
       <div class="order-social">
-        <picture class="order-picture">
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              img/mobile/order-desctop.jpeg    1x,
-              img/mobile/order-desctop@2x.jpeg 2x
-            "
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ../img/tablet/order-tablet.jpeg    1x,
-              ../img/tablet/order-tablet@2x.jpeg 2x
-            "
-          />
-          <source
-            media="(min-width: 320px)"
-            srcset="
-              ../img/mobile/order-mobile.jpeg    1x,
-              ../img/mobile/order-mobile@2x.jpeg 2x
-            "
-          />
-          <img
-            src="../img/mobile/oder-mobile.jpeg"
-            alt="unrecognizable sportswoman using lemon while making fruit smoothie home"
-            width="295"
-            height="272"
-          />
-        </picture>
+        <div class="thumb">
+          <picture class="order-picture">
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                img/desktop/oder-desktop.jpg    1x,
+                img/desktop/oder-desktop@2x.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                img/tablet/oder-tablet.jpg    1x,
+                img/tablet/oder-tablet@2x.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 320px) and (max-width: 767px)"
+              srcset="
+                img/mobile/oder-mobile.jpeg    1x,
+                img/mobile/oder-mobile@2x.jpeg 2x
+              "
+            />
+            <img
+              src="img/mobile/oder-mobile.jpeg"
+              alt="unrecognizable sportswoman using lemon while making fruit smoothie home"
+              width="536"
+              height="352"
+            />
+          </picture>
+        </div>
         <div class="order-social-box">
           <p class="social-caption">Follow us on our social networks:</p>
           <ul class="order-social-list">
@@ -55,21 +99,21 @@
                 >instagram</a
               >
             </li>
-            <li class="order-social-list-item">/</li>
+            <li class="order-social-list-item social-link">&#47;</li>
             <li class="order-social-list-item">
               <a
                 class="social-link"
-                href="https://www.facebook.com/goITclub/"
+                href="https://www.youtube.com/c/GoIT"
                 target="_blank"
                 rel="noopener noreferrer"
                 >youtube</a
               >
             </li>
-            <li class="order-social-list-item">/</li>
+            <li class="order-social-list-item social-link">&#47;</li>
             <li class="order-social-list-item">
               <a
                 class="social-link"
-                href="https://www.youtube.com/c/GoIT"
+                href="https://www.facebook.com/goITclub/"
                 target="_blank"
                 rel="noopener noreferrer"
                 >facebook

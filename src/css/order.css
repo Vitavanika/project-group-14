@@ -37,9 +37,113 @@
   }
 
   .order-form {
-    height: 552px;
-    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 20px;
     border-radius: 30px;
+    background: #fbfbfb;
+  }
+
+  .order-form-text {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #141414;
+  }
+
+  .braun-text {
+    color: #7a3145;
+  }
+
+  .green-text {
+    color: #576f35;
+  }
+
+  .order-form-lists {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .order-form-input {
+    display: flex;
+    border: 1px solid #858585;
+    border-radius: 30px;
+    padding-left: 16px;
+    width: 100%;
+    height: 48px;
+  }
+
+  .order-form-input::placeholder,
+  .order-form-textarea::placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.43;
+    text-align: start;
+    justify-content: center;
+    color: #141414;
+  }
+
+  .valid-email:focus {
+    border-color: #7a3145;
+  }
+
+  .valid-email:not(:placeholder-shown):invalid {
+    border-color: #e74a3b;
+  }
+
+  .valid-email:not(:placeholder-shown):valid {
+    border-color: #3cbc81;
+  }
+
+  .text-valid,
+  .text-invalid {
+    font-size: 14px;
+    padding-left: 20px;
+    margin-top: 4px;
+    display: none;
+  }
+
+  .text-valid {
+    color: green;
+  }
+
+  .text-invalid {
+    color: red;
+  }
+
+  .valid-email:not(:placeholder-shown):invalid ~ .text-invalid {
+    display: block;
+  }
+
+  .order-form-textarea {
+    display: flex;
+    border: 1px solid #858585;
+    border-radius: 15px;
+    padding: 16px;
+    width: 100%;
+    height: 92px;
+  }
+
+  .order-form-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    width: 100%;
+    height: 52px;
+    background: #7a3145;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
   }
 
   .order-social {
@@ -49,9 +153,13 @@
     background-color: #7a3145;
   }
 
-  .order-picture {
-    display: inline-block;
+  .thumb {
+    overflow: hidden;
+    max-width: 295px;
+    height: auto;
+    border-radius: 15px;
     margin-bottom: 20px;
+    background: rgba(20, 20, 20, 0.2);
   }
 
   .social-caption {
@@ -69,12 +177,7 @@
   }
 
   .order-social-list-item {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.11;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    color: #fbfbfb;
+    height: 20px;
   }
 
   .social-link {
@@ -92,7 +195,12 @@
     padding: 100px 0;
   }
 
+  .order-container.container {
+    padding: 0;
+  }
+
   .order-title-contaier {
+    padding: 0 96px 0 32px;
     margin-bottom: 52px;
   }
 
@@ -108,57 +216,90 @@
   }
 
   .form-and-social-container {
+    padding: 0 64px;
     gap: 32px;
   }
 
   .order-form {
-    height: 552px;
-    background-color: #fff;
+    gap: 52px;
+    padding: 72px 100px;
+    width: 100%;
+  }
+
+  .order-form-text {
+    font-size: 32px;
+  }
+
+  .order-form-lists {
+    margin-bottom: 24px;
+  }
+
+  .order-form-input {
+    height: 52px;
+  }
+
+  .order-form-textarea {
+    height: 96px;
   }
 
   .order-social {
-    border-radius: 30px;
-    padding: 40px 20px;
-    width: 100%;
-
-    background-color: #7a3145;
-    padding: 40px 20px;
+    padding: 52px;
   }
 
-  .order-picture {
-    display: inline-block;
-    margin-bottom: 20px;
+  .thumb {
+    max-width: 100%;
+    width: 536px;
+    height: 316px;
+    margin-bottom: 52px;
+  }
+
+  .order-picture img {
+    width: 536px;
+    height: 316px;
   }
 
   .social-caption {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 143%;
-    color: #d4bfc4;
-    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.25;
   }
 
   .order-social-list {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .order-title-contaier {
+    padding: 0 100px;
+    max-width: 751px;
+    box-sizing: content-box;
   }
 
-  .order-social-list-item {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 111%;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    color: #fbfbfb;
+  .form-and-social-container {
+    flex-direction: row;
+    padding: 0 100px;
+    margin: 0 auto;
   }
 
-  .social-link {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 111%;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    color: #fbfbfb;
+  .order-form {
+    height: 592px;
+    width: calc((100% - 32px) / 2);
+    padding: 52px 48px;
+  }
+
+  .order-social {
+    padding: 52px 48px;
+    width: calc((100% - 32px) / 2);
+  }
+
+  .thumb {
+    width: 428px;
+    height: 352px;
+    margin-bottom: 80px;
+  }
+
+  .order-picture img {
+    width: 428px;
+    height: 352px;
   }
 }
