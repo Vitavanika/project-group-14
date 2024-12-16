@@ -12,6 +12,7 @@ p:last-child {
   margin-bottom: 0;
 }
 
+ol,
 ul {
   margin: 0;
   padding: 0;
@@ -23,8 +24,17 @@ a {
   text-decoration: none;
 }
 
+input,
+textarea {
+  outline: none;
+  border: none;
+  background: none;
+}
+
 button {
   cursor: pointer;
+  padding: 0;
+  border: none;
 }
 
 img {
@@ -44,4 +54,14 @@ img {
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
   overflow: hidden;
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  color: inherit;
 }
