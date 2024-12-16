@@ -61,6 +61,9 @@
     flex-direction: row;
     gap: 121px;
   }
+  .footer-contacts {
+    margin-bottom: 124px;
+  }
 }
 .footer-list {
   margin-bottom: 40px;
@@ -68,6 +71,11 @@
 @media only screen and (min-width: 768px) {
   .footer-list {
     margin-bottom: 64px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .footer-list {
+    margin-bottom: 0;
   }
 }
 .foot-list-item {
