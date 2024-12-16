@@ -91,7 +91,8 @@ flex-direction: column;
 gap: 128px;
 padding: 232px 38px 52px 100px;
 max-width: 640px;
-    }
+margin-bottom: 0;
+}
     .hero-title{
 min-width: 502px;
     }
