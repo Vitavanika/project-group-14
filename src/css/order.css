@@ -116,7 +116,7 @@
     color: red;
   }
 
-  .valid-email:not(:placeholder-shown):invalid ~ .text-invalid {
+  .valid-email:not(:placeholder-shown):invalid~.text-invalid {
     display: block;
   }
 
