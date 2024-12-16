@@ -1,200 +1,135 @@
 /* @import url('./form.css'); */
-@media screen and (min-width: 320px) {
-  .order-section {
-    background-color: #576f35;
-    padding: 80px 0;
-  }
+.order-title-contaier {
+  margin-bottom: 40px;
+}
 
-  .order-title-contaier {
-    margin-bottom: 40px;
-  }
+.order-title {
+  margin-bottom: 20px;
+}
 
-  .order-title {
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 1.08;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    color: #fbfbfb;
-    margin-bottom: 20px;
-  }
+.form-and-social-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
-  .order-title-accent {
-    color: #d4bfc4;
-  }
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 20px;
+  border-radius: 30px;
+  background: var(--white);
+}
 
-  .order-description {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.43;
-    color: #fbfbfb;
-  }
+.order-form-lists {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+}
 
-  .form-and-social-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
+.order-form-input {
+  display: flex;
+  border: 1px solid var(--grey);
+  border-radius: 30px;
+  padding-left: 16px;
+  width: 100%;
+  height: 48px;
+}
 
-  .order-form {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    padding: 40px 20px;
-    border-radius: 30px;
-    background: #fbfbfb;
-  }
+.order-form-input::placeholder,
+.order-form-textarea::placeholder {
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-align: start;
+  justify-content: center;
+  color: inherit;
+}
 
-  .order-form-text {
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 100%;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    color: #141414;
-  }
+.valid-email:focus {
+  border-color: var(--chianti);
+}
 
-  .braun-text {
-    color: #7a3145;
-  }
+.valid-email:not(:placeholder-shown):invalid {
+  border-color: var(--smthwrong);
+}
 
-  .green-text {
-    color: #576f35;
-  }
+.valid-email:not(:placeholder-shown):valid {
+  border-color: var(--greenlight);
+}
 
-  .order-form-lists {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-bottom: 16px;
-  }
+.text-valid,
+.text-invalid {
+  font-size: inherit;
+  padding-left: 20px;
+  margin-top: 4px;
+  display: none;
+}
 
-  .order-form-input {
-    display: flex;
-    border: 1px solid #858585;
-    border-radius: 30px;
-    padding-left: 16px;
-    width: 100%;
-    height: 48px;
-  }
+.text-valid {
+  color: green;
+}
 
-  .order-form-input::placeholder,
-  .order-form-textarea::placeholder {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.43;
-    text-align: start;
-    justify-content: center;
-    color: #141414;
-  }
+.text-invalid {
+  color: red;
+}
 
-  .valid-email:focus {
-    border-color: #7a3145;
-  }
+.valid-email:not(:placeholder-shown):invalid ~ .text-invalid {
+  display: block;
+}
 
-  .valid-email:not(:placeholder-shown):invalid {
-    border-color: #e74a3b;
-  }
+.order-form-textarea {
+  display: flex;
+  border: 1px solid var(--grey);
+  border-radius: 15px;
+  padding: 16px;
+  width: 100%;
+  height: 92px;
+}
 
-  .valid-email:not(:placeholder-shown):valid {
-    border-color: #3cbc81;
-  }
+.order-form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  width: 100%;
+  height: 52px;
+  background: var(--chianti);
+}
 
-  .text-valid,
-  .text-invalid {
-    font-size: 14px;
-    padding-left: 20px;
-    margin-top: 4px;
-    display: none;
-  }
+.order-social {
+  border-radius: 30px;
+  padding: 40px 20px;
+  width: 100%;
+  background-color: var(--chianti);
+}
 
-  .text-valid {
-    color: green;
-  }
+.thumb {
+  overflow: hidden;
+  max-width: 295px;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  background: var(--transparent);
+}
 
-  .text-invalid {
-    color: red;
-  }
+.social-caption {
+  margin-bottom: 16px;
+}
 
-  .valid-email:not(:placeholder-shown):invalid~.text-invalid {
-    display: block;
-  }
+.order-social-list {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
 
-  .order-form-textarea {
-    display: flex;
-    border: 1px solid #858585;
-    border-radius: 15px;
-    padding: 16px;
-    width: 100%;
-    height: 92px;
-  }
-
-  .order-form-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 30px;
-    width: 100%;
-    height: 52px;
-    background: #7a3145;
-
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.11;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    color: #fbfbfb;
-  }
-
-  .order-social {
-    border-radius: 30px;
-    padding: 40px 20px;
-    width: 100%;
-    background-color: #7a3145;
-  }
-
-  .thumb {
-    overflow: hidden;
-    max-width: 295px;
-    height: auto;
-    border-radius: 15px;
-    margin-bottom: 20px;
-    background: rgba(20, 20, 20, 0.2);
-  }
-
-  .social-caption {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.43;
-    color: #d4bfc4;
-    margin-bottom: 16px;
-  }
-
-  .order-social-list {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-  }
-
-  .order-social-list-item {
-    height: 20px;
-  }
-
-  .social-link {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.11;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    color: #fbfbfb;
-  }
+.order-social-list-item {
+  height: 20px;
 }
 
 @media screen and (min-width: 768px) {
-  .order-section {
-    padding: 100px 0;
-  }
-
   .order-container.container {
     padding: 0;
   }
@@ -205,14 +140,7 @@
   }
 
   .order-title {
-    font-size: 64px;
-    line-height: 1;
     margin-bottom: 24px;
-  }
-
-  .order-description {
-    font-size: 16px;
-    line-height: 1.25;
   }
 
   .form-and-social-container {
@@ -224,10 +152,6 @@
     gap: 52px;
     padding: 72px 100px;
     width: 100%;
-  }
-
-  .order-form-text {
-    font-size: 32px;
   }
 
   .order-form-lists {
@@ -258,11 +182,6 @@
     height: 316px;
   }
 
-  .social-caption {
-    font-size: 16px;
-    line-height: 1.25;
-  }
-
   .order-social-list {
     gap: 12px;
   }
@@ -270,7 +189,6 @@
 
 @media only screen and (min-width: 1280px) {
   .order-title-contaier {
-    padding: 0 100px;
     max-width: 751px;
     box-sizing: content-box;
   }
