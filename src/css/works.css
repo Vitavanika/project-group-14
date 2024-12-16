@@ -1,22 +1,28 @@
 /* #region Made  */
 
 .made-section {
+  background-color: #7a3145;
   padding: 0;
-  margin: 0;
+}
+.made-wrapper {
+  margin: 0 auto;
+  padding: 0;
+
+  max-width: 1440px;
 }
 
 @media only screen and (min-width: 1280px) {
   .made-wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
+    max-width: 1440px;
   }
 }
 
 .image-wrapper {
   padding: 40px 20px;
   background-color: #7a3145;
-  min-width: 320px;
+  min-width: 100%;
   display: block;
   margin: 0;
 }
@@ -32,6 +38,9 @@
   .image-wrapper {
     padding: 100px 100px;
     min-width: 640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .block {
