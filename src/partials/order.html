@@ -32,13 +32,16 @@
             </li>
             <li class="order-form-item">
               <input
-                class="order-form-input"
+                class="order-form-input valid-email"
                 type="email"
                 name="user-email"
                 id="user-email"
                 placeholder="Email"
+                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
                 required
               />
+              <p class="text-valid">Succes!</p>
+              <p class="text-invalid">Invalid email, try again</p>
             </li>
             <li class="order-form-item">
               <textarea
