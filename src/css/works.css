@@ -1,7 +1,7 @@
 /* #region Made  */
 
 .made-section {
-  background-color: #7a3145;
+  background-color: #576f35;
   padding: 0;
 }
 .made-wrapper {
@@ -46,6 +46,10 @@
   background-color: #576f35;
   padding: 80px 20px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -63,8 +67,19 @@
 .made-image {
   border-radius: 30px;
   width: 100%;
+  margin: 0 auto;
+  display: block;
 }
-
+@media only screen and (min-width: 768px) {
+  .made-image {
+    max-width: 640px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .made-image {
+    max-width: 440px;
+  }
+}
 .made-section-list {
   counter-reset: ol-numbers;
 }
