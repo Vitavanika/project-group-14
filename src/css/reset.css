@@ -12,6 +12,7 @@ p:last-child {
   margin-bottom: 0;
 }
 
+ol,
 ul {
   margin: 0;
   padding: 0;
@@ -23,8 +24,17 @@ a {
   text-decoration: none;
 }
 
+input,
+textarea {
+  outline: none;
+  border: none;
+  background: none;
+}
+
 button {
   cursor: pointer;
+  padding: 0;
+  border: none;
 }
 
 img {
