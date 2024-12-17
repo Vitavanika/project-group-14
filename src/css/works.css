@@ -1,7 +1,23 @@
 /* #region Made  */
 
-.work-section {
-  background: linear-gradient(to bottom, var(--chianti) 532px, var(--green) 0);
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  .work-section {
+    background: linear-gradient(
+      to bottom,
+      var(--chianti) 458px,
+      var(--green) 0
+    );
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .work-section {
+    background: linear-gradient(
+      to bottom,
+      var(--chianti) 532px,
+      var(--green) 0
+    );
+  }
 }
 
 .wrapper {
