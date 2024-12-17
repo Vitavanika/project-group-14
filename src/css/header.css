@@ -1,5 +1,5 @@
-.header{
-  background-color: #576f35;
+.header {
+  background-color: var(--green);
 }
 .header-nav {
   display: flex;
@@ -20,12 +20,11 @@
     transform: translateX(-50%);
     width: 100%;
   }
-  .header{
+  .header {
     background-color: transparent;
   }
   .header-nav {
-      max-width: 1280px;
-   
+    max-width: 1280px;
   }
 }
 
@@ -70,25 +69,20 @@
 }
 
 .menu-link {
-  border: 1px solid #fbfbfb;
+  border: 1px solid var(--white);
   border-radius: 12px;
   padding: 12px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 125%;
-  text-align: center;
-  color: #fbfbfb;
   transition: 300ms ease-in;
   transition-property: color, background-color;
 }
 
 .menu-link:hover {
-  color: #7a3145;
-  background-color: #d4bfc4;
+  color: var(--chianti);
+  background-color: var(--blush);
 }
 .menu-link:active {
-  color: #7a3145;
-  background-color: #fbfbfb;
+  color: var(--chianti);
+  background-color: var(--white);
 }
 
 .header-menu-list {
@@ -101,21 +95,16 @@
   border: none;
   border-radius: 30px;
   padding: 16px 32px;
-  background-color: #7a3145;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 111%;
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
-  color: #fbfbfb;
   transition: 300ms ease-in;
+  background-color: var(--chianti);
   transition-property: color, background-color;
 }
+
 .header-shop-btn:hover {
-  color: #7a3145;
-  background-color: #d4bfc4;
+  color: var(--chianti);
+  background-color: var(--blush);
 }
 .header-shop-btn:active {
-  color: #7a3145;
-  background-color: #fbfbfb;
+  color: var(--chianti);
+  background-color: var(--white);
 }

@@ -16,6 +16,7 @@
   font-family: var(--font-family);
   font-size: 14px;
   line-height: 1.43;
+  letter-spacing: -0.01em;
   font-weight: var(--medium);
   color: var(--black);
   background-color: var(--white);
@@ -41,8 +42,8 @@ main {
 
 .header-hero {
   font-size: 52px;
+  font-size: clamp(46px, calc(10.9vw + 11px), 52px);
   font-weight: var(--semibold);
-  letter-spacing: -0.01em;
   line-height: 1;
   text-transform: uppercase;
   color: var(--white);
@@ -52,7 +53,6 @@ main {
   font-weight: var(--semibold);
   font-size: 48px;
   line-height: 1.08;
-  letter-spacing: -0.01em;
   text-transform: uppercase;
   color: var(--white);
 }
@@ -73,7 +73,6 @@ main {
   font-weight: var(--semibold);
   font-size: 28px;
   line-height: 1;
-  letter-spacing: -0.01em;
   text-transform: uppercase;
   color: var(--white);
 }
@@ -104,13 +103,13 @@ main {
 
 .how-works-step-accent {
   font-weight: var(--bold);
+  color: var(--black);
 }
 
 .accent-text {
   font-weight: var(--semibold);
   font-size: 18px;
   line-height: 1.11;
-  letter-spacing: -0.01em;
   text-transform: uppercase;
   text-align: center;
 }
