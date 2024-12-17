@@ -52,6 +52,7 @@ main {
 .header-second {
   font-weight: var(--semibold);
   font-size: 48px;
+  font-size: clamp(44px, calc(10.9vw + 11px), 48px);
   line-height: 1.08;
   text-transform: uppercase;
   color: var(--white);
