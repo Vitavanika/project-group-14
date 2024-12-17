@@ -2,6 +2,7 @@
 .section.how-work {
   padding: 0;
 }
+
 .how-work {
   font-size: 0;
   vertical-align: top;
@@ -46,7 +47,7 @@
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .made-section-item {
-    height: 84px;
+    height: calc((100% - 40px) / 3);
   }
 }
 
@@ -88,9 +89,8 @@
   align-items: stretch;
   gap: 20px;
   counter-reset: ol-numbers;
-  /* max-width: 335px; */
   padding: 0;
-  height: 100%;
+  height: 284px;
 }
 
 .made-section-item {
@@ -110,12 +110,15 @@
 
 @media only screen and (min-width: 768px) {
   .thumb-work {
-    max-width: 640px; /* Перевизначення*/
-    width: 640px; /* Щоб не розтягувалося*/
+    max-width: 640px;
+    /* Перевизначення*/
+    width: 640px;
+    /* Щоб не розтягувалося*/
   }
 
   .wraper-work {
-    max-width: 440px; /* Перевизначення*/
+    max-width: 440px;
+    /* Перевизначення*/
     width: 440px;
   }
 
@@ -144,6 +147,7 @@
   .made-section-list {
     max-width: 440px;
     gap: 24px;
+    height: 100%;
   }
 
   .made-section-item {
@@ -153,6 +157,7 @@
   .item-paragraf {
     padding: 18px 17px 18px 76px;
   }
+
   .made-section-item:nth-child(2) .item-paragraf {
     padding: 28px 17px 28px 76px;
   }
@@ -166,14 +171,17 @@
   }
 
   .thumb-work {
-    max-width: 440px; /* Перевизначення*/
-    width: 440px; /* Щоб не розтягувалося*/
+    max-width: 440px;
+    /* Перевизначення*/
+    width: 440px;
+    /* Щоб не розтягувалося*/
     margin: 0 0 0 auto;
     text-align: right;
   }
 
   .wraper-work {
-    max-width: 440px; /* Перевизначення*/
+    max-width: 440px;
+    /* Перевизначення*/
     width: 440px;
     margin: 0 auto 0 0;
   }
@@ -190,4 +198,5 @@
     margin-bottom: 104px;
   }
 }
+
 /* #endregion */
