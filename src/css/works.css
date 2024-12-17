@@ -1,7 +1,6 @@
 /* #region Made  */
 
 .made-section {
-  background-color: #576f35;
   padding: 0;
 }
 
@@ -21,7 +20,7 @@
 
 .image-wrapper {
   padding: 40px 20px;
-  background-color: #7a3145;
+  background-color: var(--chianti);
   min-width: 100%;
   display: block;
   margin: 0 auto;
@@ -49,7 +48,7 @@
 }
 
 .list-wrapper {
-  background-color: #576f35;
+  background-color: var(--green);
   padding: 80px 20px;
   width: 100%;
   display: flex;
@@ -105,57 +104,38 @@
   height: 42px;
   text-align: center;
   justify-content: center;
-  background-color: #7a3145;
-  color: #fbfbfb;
+  background-color: var(--chianti);
+  color: var(--white);
   border-radius: 50%;
-  border: 5px solid #d4bfc4;
-  font-weight: 600;
+  border: 5px solid var(--blush);
+
+  font-weight: var(--semibold);
   font-size: 18px;
   line-height: 1.11;
-  letter-spacing: -0.01em;
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  --pseudo-heigth: 100%;
-  top: calc((var(--container-heigth) / 2) - 50%);
 }
 
 .subtitle {
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 1;
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
   max-width: 335px;
   margin-bottom: 20px;
-  color: #fbfbfb;
-}
-
-.subtitle-accent {
-  color: #d4bfc4;
 }
 
 @media only screen and (min-width: 768px) {
   .subtitle {
-    font-size: 32px;
     margin-bottom: 24px;
     max-width: 440px;
   }
 }
 
 .made-section-paragraf {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.43;
   margin-bottom: 40px;
   max-width: 335px;
-  color: #fbfbfb;
 }
 
 @media only screen and (min-width: 768px) {
   .made-section-paragraf {
-    font-size: 16px;
-    line-height: 1.25;
     max-width: 440px;
     margin-bottom: 52px;
   }
@@ -182,7 +162,7 @@
 }
 
 .made-section-item {
-  background-color: #fbfbfb;
+  background-color: var(--white);
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -195,17 +175,11 @@
 }
 
 .item-paragraf {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.43;
-  color: #858585;
   padding: 12px 27px 12px 76px;
 }
 
 @media only screen and (min-width: 768px) {
   .item-paragraf {
-    font-size: 16px;
-    line-height: 1.25;
     padding: 18px 17px 18px 76px;
   }
   .made-section-item:nth-child(2) .item-paragraf {
@@ -215,15 +189,8 @@
 
 @media only screen and (min-width: 768px) {
   .item-paragraf {
-    font-size: 16px;
-    line-height: 1.25;
     padding: 18px 15px 18px 86px;
   }
-}
-
-.item-accent {
-  font-weight: 700;
-  color: #141414;
 }
 
 /* #endregion */

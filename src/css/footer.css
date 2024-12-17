@@ -1,6 +1,6 @@
 .footer {
   padding: 40px 0;
-  background-color: #7a3145;
+  background-color: var(--chianti);
 }
 .footer-wrapper {
   display: flex;
@@ -11,25 +11,19 @@
   margin-bottom: 40px;
 }
 .footer-logo {
-  fill: white;
+  fill: var(--white);
 }
 .footer-desc {
   max-width: 330px;
   max-height: 60px;
   margin-top: 14px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.42857;
-  color: #fbfbfb;
-  text-align: start;
 }
+
 @media only screen and (min-width: 768px) {
   .footer {
     padding: 32px 0;
   }
   .footer-desc {
-    font-size: 16px;
-    line-height: 1.25;
     max-width: 265px;
     margin-top: 24px;
   }
@@ -78,33 +72,20 @@
     margin-bottom: 0;
   }
 }
-.foot-list-item {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 1;
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
-  color: #fbfbfb;
-}
-.foot-list-item:not(:last-child) {
+
+.header-third.header-third-menu:not(:last-child) {
   margin-bottom: 14px;
 }
+
 .footer-address {
   font-style: normal;
-  font-size: 14px;
-  color: #fbfbfb;
-  font-weight: 700;
 }
-@media only screen and (min-width: 768px) {
-  .footer-address {
-    font-size: 16px;
-    line-height: 1.25;
-  }
-}
+
 .ft-link {
   display: inline-block;
   margin-bottom: 14px;
 }
+
 @media only screen and (min-width: 768px) {
   .ft-link {
     margin-bottom: 24px;
@@ -114,18 +95,12 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.42857;
-  color: #d4bfc4;
 }
+
 @media only screen and (min-width: 768px) {
   .policy-wrapper {
     flex-direction: row;
     justify-content: space-between;
-    font-size: 16px;
-    line-height: 1.25;
   }
 }
 .policy-links {
