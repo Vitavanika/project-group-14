@@ -118,6 +118,14 @@ main {
   color: var(--white);
 }
 
+.body-first {
+  font-family: var(--font-family);
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: -0.01em;
+  font-weight: var(--medium);
+}
+
 .body-first-white {
   color: var(--white);
 }
@@ -161,6 +169,11 @@ main {
 
   .header-third {
     font-size: 32px;
+  }
+
+  .body-first {
+    font-size: 16px;
+    line-height: 1.25;
   }
 }
 

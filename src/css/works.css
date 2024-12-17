@@ -1,98 +1,53 @@
 /* #region Made  */
-
-.made-section {
+.section.how-work {
   padding: 0;
 }
-
-.made-wrapper {
-  margin: 0 auto;
-  padding: 0;
-  max-width: 1440px;
+.how-work {
+  font-size: 0;
+  vertical-align: top;
 }
 
-@media only screen and (min-width: 1280px) {
-  .made-wrapper {
-    display: flex;
-    justify-content: center;
-    max-width: 1440px;
-  }
-}
-
-.image-wrapper {
-  padding: 40px 20px;
-  background-color: var(--chianti);
-  min-width: 100%;
-  display: block;
-  margin: 0 auto;
-}
-
-@media only screen and (min-width: 768px) {
-  .image-wrapper {
-    max-width: 1279px;
-    padding: 100px 64px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .image-wrapper {
-    padding: 100px 100px;
-    min-width: 640px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .block {
-    flex: 1;
-  }
-}
-
-.list-wrapper {
-  background-color: var(--green);
-  padding: 80px 20px;
+.work-wrapper {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: block;
 }
 
-@media only screen and (min-width: 768px) {
-  .list-wrapper {
-    padding: 100px 164px;
-  }
+.section-chianti.work-wrapper {
+  padding: 40px 20px;
 }
 
-@media only screen and (min-width: 1280px) {
-  .list-wrapper {
-    padding: 100px 100px;
-    min-width: 640px;
-  }
+.thumb-work {
+  display: block;
+  overflow: hidden;
+  max-width: 335px;
+  height: auto;
+  border-radius: 30px;
+  margin: 0 auto;
+  max-width: 335px;
+}
+
+.wraper-work {
+  display: block;
+  overflow: hidden;
+  max-width: 335px;
+  height: auto;
+  margin: 0 auto;
+  max-width: 335px;
+}
+
+.section-green.work-wrapper {
+  padding: 80px 20px;
 }
 
 .made-image {
-  border-radius: 30px;
-  width: 100%;
-  margin: 0 auto;
-  display: block;
-}
-@media only screen and (min-width: 768px) {
-  .made-image {
-    max-width: 640px;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .made-image {
-    max-width: 440px;
-  }
-}
-.made-section-list {
-  counter-reset: ol-numbers;
+  max-width: 100%;
+  height: auto;
 }
 
-.made-section-item {
-  position: relative;
-  padding: 0;
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .made-section-item {
+    height: 84px;
+  }
 }
 
 .made-section-item::before {
@@ -122,56 +77,31 @@
   margin-bottom: 20px;
 }
 
-@media only screen and (min-width: 768px) {
-  .subtitle {
-    margin-bottom: 24px;
-    max-width: 440px;
-  }
-}
-
 .made-section-paragraf {
   margin-bottom: 40px;
   max-width: 335px;
 }
 
-@media only screen and (min-width: 768px) {
-  .made-section-paragraf {
-    max-width: 440px;
-    margin-bottom: 52px;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .made-section-paragraf {
-    margin-bottom: 104px;
-  }
-}
-
 .made-section-list {
   display: flex;
-  gap: 20px;
   flex-direction: column;
-  max-width: 335px;
+  align-items: stretch;
+  gap: 20px;
+  counter-reset: ol-numbers;
+  /* max-width: 335px; */
   padding: 0;
-}
-
-@media only screen and (min-width: 768px) {
-  .made-section-list {
-    max-width: 440px;
-    gap: 24px;
-  }
+  height: 100%;
 }
 
 .made-section-item {
+  position: relative;
+  padding: 0;
   background-color: var(--white);
   border-radius: 15px;
   display: flex;
   align-items: center;
-}
-
-@media only screen and (min-width: 768px) {
-  .made-section-item {
-    padding: 0;
-  }
+  box-sizing: border-box;
+  flex: 1;
 }
 
 .item-paragraf {
@@ -179,6 +109,47 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .thumb-work {
+    max-width: 640px; /* Перевизначення*/
+    width: 640px; /* Щоб не розтягувалося*/
+  }
+
+  .wraper-work {
+    max-width: 440px; /* Перевизначення*/
+    width: 440px;
+  }
+
+  .section-chianti.work-wrapper {
+    padding: 100px 64px;
+  }
+
+  .section-green.work-wrapper {
+    padding: 100px 164px;
+  }
+
+  .item-paragraf {
+    padding: 18px 15px 18px 86px;
+  }
+
+  .subtitle {
+    margin-bottom: 24px;
+    max-width: 440px;
+  }
+
+  .made-section-paragraf {
+    max-width: 440px;
+    margin-bottom: 52px;
+  }
+
+  .made-section-list {
+    max-width: 440px;
+    gap: 24px;
+  }
+
+  .made-section-item {
+    padding: 0;
+  }
+
   .item-paragraf {
     padding: 18px 17px 18px 76px;
   }
@@ -187,10 +158,36 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .item-paragraf {
-    padding: 18px 15px 18px 86px;
+@media only screen and (min-width: 1280px) {
+  .work-wrapper {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+
+  .thumb-work {
+    max-width: 440px; /* Перевизначення*/
+    width: 440px; /* Щоб не розтягувалося*/
+    margin: 0 0 0 auto;
+    text-align: right;
+  }
+
+  .wraper-work {
+    max-width: 440px; /* Перевизначення*/
+    width: 440px;
+    margin: 0 auto 0 0;
+  }
+
+  .section-chianti.work-wrapper {
+    padding: 100px 64px;
+  }
+
+  .section-green.work-wrapper {
+    padding: 100px 100px;
+  }
+
+  .made-section-paragraf {
+    margin-bottom: 104px;
   }
 }
-
 /* #endregion */
