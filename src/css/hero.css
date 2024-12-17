@@ -29,8 +29,8 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .hero-img {
     background-image: linear-gradient(var(--transparent), var(--transparent)),
       url(/img/mobile/hero-mobile@2x.jpeg);
@@ -56,9 +56,9 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
+  (min-resolution: 192dpi),
 
-    (min-resolution: 2dppx) {
+  (min-resolution: 2dppx) {
     .hero-img {
       background-image: linear-gradient(var(--transparent), var(--transparent)),
         url(/img/tablet/hero-tablet@2x.jpg);
@@ -100,8 +100,8 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .hero-img {
       background-image: linear-gradient(var(--transparent), var(--transparent)),
         url(/img/desktop/hero-desktop@2x.jpg);
