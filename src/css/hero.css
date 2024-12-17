@@ -21,6 +21,7 @@
 .hero-img {
   background-image: linear-gradient(var(--transparent), var(--transparent)),
     url(/img/mobile/hero-mobile.jpeg);
+  background-size: cover;
   width: 100%;
   height: 372px;
   background-repeat: no-repeat;
