@@ -76,7 +76,11 @@
 .header-third.header-third-menu:not(:last-child) {
   margin-bottom: 14px;
 }
-
+@media only screen and (min-width: 768px) {
+  .header-third.header-third-menu:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
 .footer-address {
   font-style: normal;
 }
