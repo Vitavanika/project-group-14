@@ -40,7 +40,7 @@
 @media only screen and (min-width: 768px) {
   .hero-green {
     gap: 24px;
-    margin-bottom: 54px;
+    margin-bottom: 52px;
   }
 
   .hero-title {
@@ -57,6 +57,7 @@
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
+
     (min-resolution: 2dppx) {
     .hero-img {
       background-image: linear-gradient(var(--transparent), var(--transparent)),

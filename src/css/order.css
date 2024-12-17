@@ -62,7 +62,7 @@
 
 .text-valid,
 .text-invalid {
-  font-size: inherit;
+  font-size: 10px;
   padding-left: 20px;
   margin-top: 4px;
   display: none;
@@ -76,7 +76,7 @@
   color: red;
 }
 
-.valid-email:not(:placeholder-shown):invalid ~ .text-invalid {
+.valid-email:not(:placeholder-shown):invalid~.text-invalid {
   display: block;
 }
 
