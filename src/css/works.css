@@ -1,20 +1,13 @@
 /* #region Made  */
-.section.how-work {
-  padding: 0;
+
+.work-section {
+  background: linear-gradient(to bottom, var(--chianti) 532px, var(--green) 0);
 }
 
-.how-work {
-  font-size: 0;
-  vertical-align: top;
-}
-
-.work-wrapper {
-  width: 100%;
-  display: block;
-}
-
-.section-chianti.work-wrapper {
-  padding: 40px 20px;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .thumb-work {
@@ -23,21 +16,14 @@
   max-width: 335px;
   height: auto;
   border-radius: 30px;
-  margin: 0 auto;
-  max-width: 335px;
 }
 
-.wraper-work {
-  display: block;
-  overflow: hidden;
-  max-width: 335px;
-  height: auto;
-  margin: 0 auto;
-  max-width: 335px;
+.work-container {
+  padding: 0 0 40px 0;
 }
 
-.section-green.work-wrapper {
-  padding: 80px 20px;
+.step-container {
+  padding: 40px 0 0 0;
 }
 
 .made-image {
@@ -48,6 +34,10 @@
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .made-section-item {
     height: calc((100% - 40px) / 3);
+  }
+
+  .section.work-section {
+    padding: 40px 0;
   }
 }
 
@@ -109,6 +99,22 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .work-section {
+    background: linear-gradient(
+      to bottom,
+      var(--chianti) 840px,
+      var(--green) 0
+    );
+  }
+
+  .work-container {
+    padding: 0 0 100px 0;
+  }
+
+  .step-container {
+    padding: 100px 0 0 0;
+  }
+
   .thumb-work {
     max-width: 640px;
     /* Перевизначення*/
@@ -164,10 +170,21 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .work-wrapper {
-    display: inline-block;
-    width: 50%;
-    vertical-align: top;
+  .work-section {
+    background: linear-gradient(to right, var(--chianti) 50%, var(--green) 50%);
+  }
+
+  .wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .work-container {
+    padding: 0 100px 0 0;
+  }
+
+  .step-container {
+    padding: 0 0 0 100px;
   }
 
   .thumb-work {
@@ -175,7 +192,6 @@
     /* Перевизначення*/
     width: 440px;
     /* Щоб не розтягувалося*/
-    margin: 0 0 0 auto;
     text-align: right;
   }
 
@@ -183,7 +199,6 @@
     max-width: 440px;
     /* Перевизначення*/
     width: 440px;
-    margin: 0 auto 0 0;
   }
 
   .section-chianti.work-wrapper {
