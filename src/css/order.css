@@ -118,7 +118,7 @@
   background-color: var(--white);
 }
 
-.ho .order-social {
+.order-social {
   border-radius: 30px;
   padding: 40px 20px;
   width: 100%;
@@ -136,6 +136,7 @@
 
 .social-caption {
   margin-bottom: 16px;
+  font-weight: var(--bold);
 }
 
 .order-social-list {
