@@ -130,6 +130,10 @@
   height: 20px;
 }
 
+.order-social-list-item a {
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .order-social-list-item a:hover,
 .order-social-list-item a:focus {
   color: var(--blush);
