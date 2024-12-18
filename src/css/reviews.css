@@ -49,6 +49,7 @@
     gap: 52px;
     padding: 100px 32px;
   }
+
   .reviews-title {
     gap: 24px;
     max-width: 553px;
@@ -59,14 +60,21 @@
     padding: 20px;
   }
 
+  .reviews-text {
+    text-align: center;
+    color: var(--grey);
+  }
+
   /* код вимкнення тільки 3 елемента */
   .reviews-items:nth-of-type(3) {
     display: none;
   }
+
   .reviews-items:nth-of-type(2) {
     display: inherit;
   }
 }
+
 /* #endregion */
 /* #region для десктопа */
 @media only screen and (min-width: 1280px) {
@@ -84,5 +92,6 @@
     display: inherit;
   }
 }
+
 /* #endregion */
 /* кінець секції reviews */
