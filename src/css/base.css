@@ -30,6 +30,9 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 :hover,
@@ -40,6 +43,9 @@ html {
 }
 
 body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   min-width: 100vw;
@@ -80,7 +86,6 @@ main {
   text-transform: uppercase;
   color: var(--white);
 }
-
 
 .header-third {
   font-weight: var(--semibold);
