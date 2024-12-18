@@ -118,7 +118,18 @@
   background-color: var(--white);
 }
 
-.order-social {
+.order-form-btn:hover,
+.order-form-btn:focus {
+  color: var(--chianti);
+  background-color: var(--blush);
+}
+
+.order-form-btn:active {
+  color: var(--chianti);
+  background-color: var(--white);
+}
+
+.ho .order-social {
   border-radius: 30px;
   padding: 40px 20px;
   width: 100%;
