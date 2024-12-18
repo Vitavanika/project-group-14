@@ -28,6 +28,13 @@
   -webkit-text-size-adjust: 100%;
 }
 
+:hover,
+:focus,
+.focus-visible,
+:active {
+  outline: none;
+}
+
 body {
   display: flex;
   flex-direction: column;

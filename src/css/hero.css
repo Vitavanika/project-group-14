@@ -1,6 +1,7 @@
 .hero.section {
   padding-top: 0;
   padding-bottom: 0;
+  padding-top: 48px;
 }
 
 .hero-green {
@@ -10,8 +11,7 @@ justify-content: flex-start;
 flex-direction: column;
 gap: 20px;
 padding: 0 20px;
-margin-bottom: 40px;
-padding-top: 48px;
+padding-bottom: 40px;
 }
 
 .hero-title {
@@ -41,7 +41,7 @@ margin: 0 auto ;
 @media only screen and (min-width: 768px) {
   .hero-green {
     gap: 24px;
-    margin-bottom: 54px;
+    padding-bottom: 52px;
 }
     .hero-title{
 font-size: 76px;
@@ -70,6 +70,10 @@ height: 536px;
 }
 
  @media only screen and (min-width: 1280px) {
+  .hero.section {
+  padding-top: 0;
+  padding-bottom: 0;
+  }
    .hero-cont{
  display: flex;
 flex-direction: row;
