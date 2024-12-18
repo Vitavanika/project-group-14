@@ -1,5 +1,3 @@
-/* секція Reviews */
-/* #region для мобільного */
 .reviews {
   display: flex;
   flex-direction: column;
@@ -42,13 +40,13 @@
   display: none;
 }
 
-/* #endregion */
-/* #region для планшета */
+
 @media only screen and (min-width: 768px) {
   .reviews {
     gap: 52px;
-    padding: 100px 32px;
+    padding: 0 32px;
   }
+
   .reviews-title {
     gap: 24px;
     max-width: 553px;
@@ -59,19 +57,24 @@
     padding: 20px;
   }
 
+  .reviews-text {
+    text-align: center;
+    color: var(--grey);
+  }
+
   /* код вимкнення тільки 3 елемента */
   .reviews-items:nth-of-type(3) {
     display: none;
   }
+
   .reviews-items:nth-of-type(2) {
     display: inherit;
   }
 }
-/* #endregion */
-/* #region для десктопа */
+
 @media only screen and (min-width: 1280px) {
   .reviews {
-    padding: 100px;
+    padding: 0 100px;
   }
 
   .reviews-items {
@@ -84,5 +87,4 @@
     display: inherit;
   }
 }
-/* #endregion */
-/* кінець секції reviews */
+

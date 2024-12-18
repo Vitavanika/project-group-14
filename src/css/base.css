@@ -28,6 +28,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :hover,
 :focus,
 .focus-visible,
@@ -41,10 +45,24 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
+  padding: 0;
 }
 
 main {
   flex-grow: 1;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  overflow: hidden;
 }
 
 .header-hero {
@@ -65,17 +83,6 @@ main {
   color: var(--white);
 }
 
-.header-second-black {
-  color: var(--black);
-}
-
-.header-second-blush {
-  color: var(--blush);
-}
-
-.header-second-green {
-  color: var(--green);
-}
 
 .header-third {
   font-weight: var(--semibold);
@@ -85,31 +92,35 @@ main {
   color: var(--white);
 }
 
-.header-third-chianti {
-  color: var(--chianti);
-}
-
-.header-third-green {
-  color: var(--green);
-}
-
-.header-third-black {
+.color-black {
   color: var(--black);
 }
 
-.header-third-blush {
+.color-blush {
   color: var(--blush);
+}
+
+.color-green {
+  color: var(--green);
+}
+
+.color-grey {
+  color: var(--grey);
+}
+
+.color-white {
+  color: var(--white);
+}
+
+.color-cianti {
+  color: var(--chianti);
 }
 
 .header-third-menu {
   font-size: 32px;
 }
 
-.how-works-step {
-  color: var(--grey);
-}
-
-.how-works-step-accent {
+.color-grey-accent {
   font-weight: var(--bold);
   color: var(--black);
 }
@@ -122,42 +133,12 @@ main {
   text-align: center;
 }
 
-.accent-text-white {
-  color: var(--white);
-}
-
 .body-first {
   font-family: var(--font-family);
   font-size: 14px;
   line-height: 1.43;
   letter-spacing: -0.01em;
   font-weight: var(--medium);
-}
-
-.body-first-white {
-  color: var(--white);
-}
-
-.body-first-blush {
-  color: var(--blush);
-}
-
-.body-first-cianti {
-  color: var(--chianti);
-}
-
-.body-first-grey-center {
-  text-align: center;
-  color: var(--grey);
-}
-
-.body-second-blush {
-  font-weight: var(--bold);
-  color: var(--blush);
-}
-
-.body-second-white {
-  color: var(--white);
 }
 
 @media only screen and (min-width: 768px) {
