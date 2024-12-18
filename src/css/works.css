@@ -1,11 +1,9 @@
 /* #region Made  */
 
 .work-section {
-  background: linear-gradient(
-    to bottom,
-    var(--chianti) clamp(418px, calc((1.345 * 100vw - 52.4px) + 80px), 532px),
-    var(--green) 0
-  );
+  background: linear-gradient(to bottom,
+      var(--chianti) clamp(418px, calc((1.345 * 100vw - 52.4px) + 80px), 532px),
+      var(--green) 0);
 }
 
 .wrapper {
@@ -32,7 +30,7 @@
 
 .made-image {
   max-width: 100%;
-  height: auto;
+
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -83,7 +81,6 @@
   align-items: stretch;
   gap: 20px;
   counter-reset: ol-numbers;
-  padding: 0;
   height: 284px;
 }
 
@@ -104,11 +101,7 @@
 
 @media only screen and (min-width: 768px) {
   .work-section {
-    background: linear-gradient(
-      to bottom,
-      var(--chianti) 840px,
-      var(--green) 0
-    );
+    background: linear-gradient(to bottom, var(--chianti) 840px, var(--green) 0);
   }
 
   .work-container {

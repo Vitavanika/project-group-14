@@ -66,7 +66,6 @@ main {
 }
 
 .header-hero {
-  font-size: 52px;
   font-size: clamp(46px, calc(10.9vw + 11px), 52px);
   font-weight: var(--semibold);
   line-height: 1;
@@ -76,7 +75,6 @@ main {
 
 .header-second {
   font-weight: var(--semibold);
-  font-size: 48px;
   font-size: clamp(44px, calc(10.9vw + 11px), 48px);
   line-height: 1.08;
   text-transform: uppercase;
@@ -167,10 +165,6 @@ main {
 }
 
 @media only screen and (min-width: 1280px) {
-  .header-hero {
-    font-size: 76px;
-  }
-
   .header-second.discount {
     font-size: 76px;
   }
