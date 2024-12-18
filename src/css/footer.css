@@ -81,6 +81,14 @@
     margin-bottom: 24px;
   }
 }
+.footer-anchor-link {
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-anchor-link:hover,
+.footer-anchor-link:focus {
+  color: var(--blush);
+}
+
 .footer-address {
   font-style: normal;
 }
@@ -88,8 +96,12 @@
 .ft-link {
   display: inline-block;
   margin-bottom: 14px;
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.ft-link:hover,
+.ft-link:focus {
+  color: var(--blush);
+}
 @media only screen and (min-width: 768px) {
   .ft-link {
     margin-bottom: 24px;
