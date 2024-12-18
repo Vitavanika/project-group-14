@@ -76,7 +76,8 @@
   transition-property: color, background-color;
 }
 
-.menu-link:hover {
+.menu-link:hover,
+.menu-link:focus {
   color: var(--chianti);
   background-color: var(--blush);
 }
@@ -100,7 +101,8 @@
   transition-property: color, background-color;
 }
 
-.header-shop-btn:hover {
+.header-shop-btn:hover,
+.header-shop-btn:focus {
   color: var(--chianti);
   background-color: var(--blush);
 }
