@@ -17,7 +17,7 @@
     />
 
     <script type="module" crossorigin src="/project-group-14/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-group-14/assets/index-C1ERujiT.css">
+    <link rel="stylesheet" crossorigin href="/project-group-14/assets/index-Bu_GV2qA.css">
   </head>
 
   <body>
@@ -453,13 +453,17 @@
           <ul class="order-form-lists">
             <li class="order-form-item">
               <input
-                class="order-form-input"
+                class="order-form-input valid-name"
                 type="text"
                 name="user-name"
                 id="user-name"
                 placeholder="Full Name"
+                pattern="[A-Za-z\u0400-\u04FF]{3,}"
                 required
               />
+              <p class="text-invalid">
+                Please enter correct name, e.g. Tom Smith
+              </p>
             </li>
             <li class="order-form-item">
               <input
@@ -468,7 +472,7 @@
                 name="user-email"
                 id="user-email"
                 placeholder="Email"
-                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                pattern="([A-Za-z0-9_.\-]+)@([A-Za-z0-9_.\-]+)\.([A-Za-z]{2,})$"
                 required
               />
               <p class="text-invalid">
