@@ -57,3 +57,12 @@
     width: calc((100% - 2 * 24px) / 3);
   }
 }
+
+.veggies-item-price {
+  margin-bottom: 12px;
+}
+@media only screen and (min-width: 1280px) {
+  .veggies-item-price {
+      margin-bottom: 8px;
+    }
+}

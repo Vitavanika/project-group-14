@@ -1,7 +1,11 @@
 /* #region Made  */
 
 .work-section {
-  background: linear-gradient(to bottom, var(--chianti) 532px, var(--green) 0);
+  background: linear-gradient(
+    to bottom,
+    var(--chianti) clamp(418px, calc((1.345 * 100vw - 52.4px) + 80px), 532px),
+    var(--green) 0
+  );
 }
 
 .wrapper {
@@ -37,7 +41,7 @@
   }
 
   .section.work-section {
-    padding: 40px 0;
+    padding-top: 40px;
   }
 }
 
