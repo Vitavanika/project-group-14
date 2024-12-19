@@ -20,10 +20,7 @@
 }
 
 .hero-img {
-  background-image: linear-gradient(
-      rgba(20, 20, 20, 0.2),
-      rgba(20, 20, 20, 0.2)
-    ),
+  background-image: linear-gradient(var(--transparent), var(--transparent)),
     url(/img/mobile/hero-mobile.webp);
   height: 372px;
   background-size: cover;
@@ -59,10 +56,7 @@
   }
 
   .hero-img {
-    background-image: linear-gradient(
-        rgba(20, 20, 20, 0.2),
-        rgba(20, 20, 20, 0.2)
-      ),
+    background-image: linear-gradient(var(--transparent), var(--transparent)),
       url(/img/tablet/hero-tablet.webp);
     width: 768px;
     height: 536px;
@@ -72,10 +66,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero-img {
-      background-image: linear-gradient(
-          rgba(20, 20, 20, 0.2),
-          rgba(20, 20, 20, 0.2)
-        ),
+      background-image: linear-gradient(var(--transparent), var(--transparent)),
         url(/img/tablet/hero-tablet@2x.webp);
     }
   }
@@ -113,10 +104,7 @@
   }
 
   .hero-img {
-    background-image: linear-gradient(
-        rgba(20, 20, 20, 0.2),
-        rgba(20, 20, 20, 0.2)
-      ),
+    background-image: linear-gradient(var(--transparent), var(--transparent)),
       url(/img/desktop/hero-desktop.webp);
     max-width: 640px;
     height: 796px;
@@ -126,10 +114,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero-img {
-      background-image: linear-gradient(
-          rgba(20, 20, 20, 0.2),
-          rgba(20, 20, 20, 0.2)
-        ),
+      background-image: linear-gradient(var(--transparent), var(--transparent)),
         url(/img/desktop/hero-desktop@2x.webp);
     }
   }
