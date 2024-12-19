@@ -11,6 +11,10 @@
   padding-bottom: 40px;
 }
 
+.hero-cont {
+  width: 100%;
+}
+
 .hero-title {
   max-width: 335px;
 }
