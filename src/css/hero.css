@@ -20,9 +20,11 @@
 }
 
 .hero-img {
-  background-image: linear-gradient(rgba(20, 20, 20, 0.2),
-      rgba(20, 20, 20, 0.2)),
-    url(/img/mobile/hero-mobile.jpeg);
+  background-image: linear-gradient(
+      rgba(20, 20, 20, 0.2),
+      rgba(20, 20, 20, 0.2)
+    ),
+    url(/img/mobile/hero-mobile.webp);
   height: 372px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -31,11 +33,11 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .hero-img {
     background-image: linear-gradient(var(--transparent), var(--transparent)),
-      url(/img/mobile/hero-mobile@2x.jpeg);
+      url(/img/mobile/hero-mobile@2x.webp);
   }
 }
 
@@ -57,20 +59,24 @@
   }
 
   .hero-img {
-    background-image: linear-gradient(rgba(20, 20, 20, 0.2),
-        rgba(20, 20, 20, 0.2)),
-      url(/img/tablet/hero-tablet@2x.jpg);
+    background-image: linear-gradient(
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)
+      ),
+      url(/img/tablet/hero-tablet@2x.webp);
     width: 768px;
     height: 536px;
   }
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution:192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .hero-img {
-      background-image: linear-gradient(rgba(20, 20, 20, 0.2),
-          rgba(20, 20, 20, 0.2)),
-        url(/img/tablet/hero-tablet@2x.jpg);
+      background-image: linear-gradient(
+          rgba(20, 20, 20, 0.2),
+          rgba(20, 20, 20, 0.2)
+        ),
+        url(/img/tablet/hero-tablet@2x.webp);
     }
   }
 }
@@ -107,20 +113,24 @@
   }
 
   .hero-img {
-    background-image: linear-gradient(rgba(20, 20, 20, 0.2),
-        rgba(20, 20, 20, 0.2)),
-      url(/img/desktop/hero-desktop.jpg);
+    background-image: linear-gradient(
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)
+      ),
+      url(/img/desktop/hero-desktop.webp);
     max-width: 640px;
     height: 796px;
   }
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution:192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .hero-img {
-      background-image: linear-gradient(rgba(20, 20, 20, 0.2),
-          rgba(20, 20, 20, 0.2)),
-        url(/img/desktop/hero-desktop@2x.jpg);
+      background-image: linear-gradient(
+          rgba(20, 20, 20, 0.2),
+          rgba(20, 20, 20, 0.2)
+        ),
+        url(/img/desktop/hero-desktop@2x.webp);
     }
   }
 }
