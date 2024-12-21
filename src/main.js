@@ -13,16 +13,12 @@ function toggleModal() {
   menu.classList.toggle('is-open');
 }
 
-// Слайдер
-
 const sliderWrapper = document.querySelector('.reviews-list');
 const scrollerDots = document.querySelector('.scroller-dots');
-
 const sliderItems = document.querySelectorAll('.reviews-items');
-const totalSlides = sliderItems.length;
 
 let visibleSlides = calculateVisibleSlides();
-let dotsCount = totalSlides - visibleSlides + 1;
+let dotsCount = Math.max(1, totalSlides - visibleSlides + 1);
 
 function calculateVisibleSlides() {
   const screenWidth = window.innerWidth;
@@ -37,9 +33,11 @@ function calculateVisibleSlides() {
 }
 
 function createDots() {
+  if (totalSlides === 0) return;
   scrollerDots.innerHTML = '';
+
   visibleSlides = calculateVisibleSlides();
-  dotsCount = totalSlides - visibleSlides + 1;
+  dotsCount = Math.max(1, totalSlides - visibleSlides + 1);
 
   for (let i = 0; i < dotsCount; i++) {
     const dot = document.createElement('div');
@@ -59,8 +57,8 @@ function createDots() {
 sliderWrapper.addEventListener('scroll', () => {
   const scrollLeft = sliderWrapper.scrollLeft;
   const slideWidth = sliderWrapper.scrollWidth / totalSlides;
+  const activeIndex = Math.floor(scrollLeft / slideWidth);
 
-  const activeIndex = Math.round(scrollLeft / slideWidth);
   document.querySelectorAll('.dot').forEach((dot, index) => {
     dot.classList.toggle('active', index === activeIndex);
   });
@@ -68,4 +66,4 @@ sliderWrapper.addEventListener('scroll', () => {
 
 window.addEventListener('resize', createDots);
 
-createDots();
+document.addEventListener('DOMContentLoaded', createDots);
