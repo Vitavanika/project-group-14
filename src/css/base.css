@@ -144,6 +144,10 @@ main {
   font-weight: var(--medium);
 }
 
+.body-second {
+  font-weight: var(--bold);
+}
+
 @media only screen and (min-width: 768px) {
   :root {
     font-size: 16px;
