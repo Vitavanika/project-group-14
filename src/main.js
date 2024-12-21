@@ -16,6 +16,7 @@ function toggleModal() {
 const sliderWrapper = document.querySelector('.reviews-list');
 const scrollerDots = document.querySelector('.scroller-dots');
 const sliderItems = document.querySelectorAll('.reviews-items');
+let totalSlides = sliderItems.length;
 
 let visibleSlides = calculateVisibleSlides();
 let dotsCount = Math.max(1, totalSlides - visibleSlides + 1);
