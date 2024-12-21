@@ -15,6 +15,11 @@
   display: flex;
   flex-direction: row;
   gap: 24px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .reviews-items {
@@ -25,6 +30,8 @@
   border: 1px solid var(--blush);
   border-radius: 24px;
   padding: 20px 16px;
+  scroll-snap-align: start;
+  flex: 0 0 100%;
 }
 
 .reviews-cards-text {
@@ -35,11 +42,29 @@
 }
 
 /* код вимкнення 2 та 3 елемента */
-.reviews-items:nth-of-type(2),
+/* .reviews-items:nth-of-type(2),
 .reviews-items:nth-of-type(3) {
   display: none;
+} */
+
+.scroller-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
+.scroller-dots .dot {
+  width: 12px;
+  height: 12px;
+  background-color: var(--blush);
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+.scroller-dots .dot.active {
+  background-color: var(--chianti);
+}
 
 @media only screen and (min-width: 768px) {
   .reviews {
@@ -55,6 +80,7 @@
   .reviews-items {
     width: calc((100% - 24px) / 2);
     padding: 20px;
+    flex: 0 0 calc((100% - 24px) / 2);
   }
 
   .reviews-text {
@@ -62,8 +88,7 @@
     color: var(--grey);
   }
 
-  /* код вимкнення тільки 3 елемента */
-  .reviews-items:nth-of-type(3) {
+  код вимкнення тільки 3 елемента .reviews-items:nth-of-type(3) {
     display: none;
   }
 
@@ -79,12 +104,12 @@
 
   .reviews-items {
     width: calc((100% - 48px) / 3);
+    flex: 0 0 calc((100% - 48px) / 3);
   }
 
   /* код повертає елементам видимість */
-  .reviews-items:nth-of-type(2),
+  /* .reviews-items:nth-of-type(2),
   .reviews-items:nth-of-type(3) {
     display: inherit;
-  }
+  } */
 }
-
