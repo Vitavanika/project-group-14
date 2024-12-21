@@ -41,12 +41,6 @@
   flex-direction: column;
 }
 
-/* код вимкнення 2 та 3 елемента */
-/* .reviews-items:nth-of-type(2),
-.reviews-items:nth-of-type(3) {
-  display: none;
-} */
-
 .scroller-dots {
   display: flex;
   justify-content: center;
@@ -87,14 +81,6 @@
     text-align: center;
     color: var(--grey);
   }
-
-  код вимкнення тільки 3 елемента .reviews-items:nth-of-type(3) {
-    display: none;
-  }
-
-  .reviews-items:nth-of-type(2) {
-    display: inherit;
-  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -106,10 +92,4 @@
     width: calc((100% - 48px) / 3);
     flex: 0 0 calc((100% - 48px) / 3);
   }
-
-  /* код повертає елементам видимість */
-  /* .reviews-items:nth-of-type(2),
-  .reviews-items:nth-of-type(3) {
-    display: inherit;
-  } */
 }
