@@ -11,23 +11,23 @@ Users can choose from pre-made vegetable baskets or customize their selection ba
 
 ## Team Composition
 
-[@Vitavanika  Tetiana Viienko](https://github.com/Vitavanika)
+[@Vitavanika  Tetiana Viienko](https://github.com/Vitavanika) - TeamLied / Developer / Order section
 
-[@rtt2018 Taras Rogiv](https://github.com/rtt2018)
+[@rtt2018 Taras Rogiv](https://github.com/rtt2018) - Developer / Advertisment section
 
-[@kostyaslob  Kostya Slobodianiuk](https://github.com/kostyaslob)
+[@kostyaslob  Kostya Slobodianiuk](https://github.com/kostyaslob) - Developer / Mobile menu
 
-[@hanna-uler Hanna Uler](https://github.com/hanna-uler)
+[@hanna-uler Hanna Uler](https://github.com/hanna-uler) - Developer / Vegetables section
 
-[@YuliaKolinko Yuliia Kolinko](https://github.com/YuliaKolinko)
+[@YuliaKolinko Yuliia Kolinko](https://github.com/YuliaKolinko) - Scrum master / Developer / Works section
 
-[@katuha2024 Kateryna Puzikova](https://github.com/katuha2024)
+[@katuha2024 Kateryna Puzikova](https://github.com/katuha2024) - Developer / Hero section
 
-[@Yelyzaveta-Shevchenko Yelyzaveta Shevchenko](https://github.com/Yelyzaveta-Shevchenko)
+[@Yelyzaveta-Shevchenko Yelyzaveta Shevchenko](https://github.com/Yelyzaveta-Shevchenko) - Developer / Footer
 
-[@LiudmylaTar Liudmyla Taran](https://github.com/LiudmylaTar)
+[@LiudmylaTar Liudmyla Taran](https://github.com/LiudmylaTar) - Developer / Header
 
-[@vladislav-vf Vladislav  Basanko](https://github.com/vladislav-vf)
+[@vladislav-vf Vladislav  Basanko](https://github.com/vladislav-vf) - Developer / Reviews section
 
 ## Project Overview  
 
